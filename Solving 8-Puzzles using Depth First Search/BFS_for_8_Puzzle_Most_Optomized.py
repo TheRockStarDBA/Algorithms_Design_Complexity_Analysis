@@ -1,8 +1,8 @@
 
-
 def reverse(string):
     string = "".join(reversed(string))
     return string
+
 '''----------------------------------------------------------------------------------------------------------'''
 '''Helper functions to make deepcopy() faster'''
 _dispatcher = {}
@@ -44,8 +44,6 @@ def get_neighbor_of_state(state_to_check_config, state_space_configs_dictionary,
 
     items_as_dict = dict(zip(state_to_check_config, range(0, len(state_to_check_config))))
     idx_of_0 = items_as_dict[0]
-
-    #idx_of_0 = state_to_check_config.index(0)
 
     '''Check if 0 can be moved left'''
     if idx_of_0 != 0:
